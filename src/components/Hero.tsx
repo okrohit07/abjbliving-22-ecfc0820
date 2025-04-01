@@ -20,30 +20,6 @@ const Hero = () => {
         <Link to="/find-room" className="inline-flex items-center bg-black/70 hover:bg-black transition-colors py-3 text-lg uppercase tracking-wider px-[19px]">
           <Search size={18} className="mr-2" /> Descubre Tu Espacio
         </Link>
-        
-        <div className="grid grid-cols-3 gap-4 mt-12 max-w-4xl mx-auto">
-          <div className="overflow-hidden rounded-lg shadow-lg">
-            <img 
-              src="/lovable-uploads/c9b1fdff-26ae-4e8d-8a60-c566edd614fe.png" 
-              alt="Espacio de coliving ABJB" 
-              className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div className="overflow-hidden rounded-lg shadow-lg">
-            <img 
-              src="/lovable-uploads/f41a175c-7eb1-4094-9bc5-c6ed5fd0340d.png" 
-              alt="Ambiente comunitario ABJB" 
-              className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div className="overflow-hidden rounded-lg shadow-lg">
-            <img 
-              src="/lovable-uploads/c9b1fdff-26ae-4e8d-8a60-c566edd614fe.png" 
-              alt="Diseño exclusivo ABJB" 
-              className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-        </div>
       </div>
 
       <div className="absolute bottom-8 left-0 right-0 flex justify-center">

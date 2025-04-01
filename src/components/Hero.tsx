@@ -6,8 +6,8 @@ const Hero = () => {
   }}>
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent"></div>
       
-      <div className="container mx-auto px-4 md:px-6 z-10 text-white text-center">
-        <h2 className="text-lg md:text-xl uppercase tracking-widest mb-2 md:mb-4">BIENVENIDO A ABJB</h2>
+      <div className="container mx-auto px-4 md:px-6 z-10 text-white text-center my-0">
+        <h2 className="text-lg md:text-xl uppercase tracking-widest mb-2 md:mb-4 my-[40px]">BIENVENIDO A ABJB</h2>
         
         <h1 className="hero-heading md:text-6xl lg:text-8xl mb-6 md:mb-8 max-w-4xl mx-auto text-4xl">VIVE LA EXPERIENCIA QUE SIEMPRE IMAGINASTE</h1>
         

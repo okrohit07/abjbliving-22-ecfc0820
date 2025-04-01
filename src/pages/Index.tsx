@@ -5,6 +5,8 @@ import ApartmentCarousel from "@/components/ApartmentCarousel";
 import CommunitySection from "@/components/CommunitySection";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
+import TechnologySection from "@/components/TechnologySection";
+import SustainabilitySection from "@/components/SustainabilitySection";
 
 const Index = () => {
   return (
@@ -13,6 +15,8 @@ const Index = () => {
       <Hero />
       <ApartmentCarousel />
       <CommunitySection />
+      <TechnologySection />
+      <SustainabilitySection />
       <CallToAction />
       <Footer />
     </div>

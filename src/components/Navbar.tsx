@@ -28,28 +28,28 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link to="/" className="text-2xl font-serif font-bold tracking-tight">
-          NERA <span className="font-light">LIVING</span>
+          ABJB <span className="font-light">LIVING</span>
         </Link>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link to="/apartments" className="text-sm font-medium hover:text-black/70 transition">
-            APARTMENTS
+            RESIDENCIAS
           </Link>
           <Link to="/communities" className="text-sm font-medium hover:text-black/70 transition">
-            COMMUNITIES
+            COMUNIDAD
           </Link>
           <Link to="/amenities" className="text-sm font-medium hover:text-black/70 transition">
-            AMENITIES
+            AMENIDADES
           </Link>
           <Link to="/about" className="text-sm font-medium hover:text-black/70 transition">
-            ABOUT US
+            NOSOTROS
           </Link>
           <Link 
             to="/find-room" 
             className="bg-black text-white px-4 py-2 text-sm font-medium hover:bg-black/80 transition"
           >
-            FIND YOUR ROOM
+            ENCUENTRA TU ESPACIO
           </Link>
         </nav>
 
@@ -71,35 +71,35 @@ const Navbar = () => {
               className="text-sm font-medium py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              APARTMENTS
+              RESIDENCIAS
             </Link>
             <Link 
               to="/communities" 
               className="text-sm font-medium py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              COMMUNITIES
+              COMUNIDAD
             </Link>
             <Link 
               to="/amenities" 
               className="text-sm font-medium py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              AMENITIES
+              AMENIDADES
             </Link>
             <Link 
               to="/about" 
               className="text-sm font-medium py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              ABOUT US
+              NOSOTROS
             </Link>
             <Link 
               to="/find-room" 
               className="bg-black text-white px-4 py-2 text-sm font-medium text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              FIND YOUR ROOM
+              ENCUENTRA TU ESPACIO
             </Link>
           </div>
         </div>

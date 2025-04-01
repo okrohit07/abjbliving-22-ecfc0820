@@ -13,17 +13,21 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent"></div>
       
       <div className="container mx-auto px-4 md:px-6 z-10 text-white text-center">
-        <h2 className="text-lg md:text-xl uppercase tracking-widest mb-2 md:mb-4">WELCOME TO NERA LIVING</h2>
+        <h2 className="text-lg md:text-xl uppercase tracking-widest mb-2 md:mb-4">BIENVENIDO A ABJB</h2>
         
         <h1 className="hero-heading text-4xl md:text-6xl lg:text-8xl mb-6 md:mb-8 max-w-4xl mx-auto">
-          RENT THE LIFE YOU'VE ALWAYS WANTED
+          LUXURY LIVING REIMAGINED
         </h1>
+        
+        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+          Exclusividad, comunidad, tecnología y sostenibilidad en perfecta armonía
+        </p>
         
         <Link
           to="/find-room"
           className="inline-flex items-center bg-black/70 hover:bg-black transition-colors px-6 py-3 text-lg uppercase tracking-wider"
         >
-          <Search size={18} className="mr-2" /> Find Your Room
+          <Search size={18} className="mr-2" /> Descubre Tu Espacio
         </Link>
       </div>
 
@@ -38,7 +42,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 text-center py-4 text-white/80 text-sm">
-        nera-living.com
+        abjb.com
       </div>
     </div>
   );

@@ -74,5 +74,14 @@
 }
 
 .community-icon {
-  @apply w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white;
+  @apply w-16 h-16 bg-black rounded-full flex items-center justify-center text-white;
 }
+
+.glass-card {
+  @apply backdrop-blur-sm bg-black/30 border border-white/10 rounded-lg;
+}
+
+.luxury-card {
+  @apply shadow-lg transition-all duration-300 hover:shadow-xl;
+}
+

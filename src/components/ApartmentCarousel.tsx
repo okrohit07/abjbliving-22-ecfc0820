@@ -80,7 +80,7 @@ const ApartmentCarousel = () => {
   const prevImage = () => {
     setCurrentImageIndex(prev => (prev - 1 + currentApartment.images.length) % currentApartment.images.length);
   };
-  return <div className="py-16 md:py-24 bg-background">
+  return <div className="py-16 bg-background md:py-[96px]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row lg:space-x-8">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0">

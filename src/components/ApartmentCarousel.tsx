@@ -1,7 +1,5 @@
-
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight, Bath, Bed, Wifi, Home, Car, Thermometer } from 'lucide-react';
-
 interface ApartmentProps {
   id: string;
   type: string;
@@ -23,106 +21,80 @@ interface ApartmentProps {
     condition?: string;
   };
 }
-
-const apartments: ApartmentProps[] = [
-  {
-    id: "studio",
-    type: "studio",
-    title: "STUDIO APARTMENTS",
-    description: "Spaces created to be functional, providing everything you need in a practical environment with a modern and inviting design.",
-    images: ["/lovable-uploads/c9b1fdff-26ae-4e8d-8a60-c566edd614fe.png"],
-    features: {
-      bathrooms: 1,
-      bedType: "Double bed",
-      wifi: true,
-      furnished: true,
-      size: "From 36 m²",
-      parking: "Optional car park",
-      climate: "Air conditioning and heating"
-    },
-    price: {
-      amount: 955,
-      period: "/month",
-      condition: "(furnished)"
-    }
+const apartments: ApartmentProps[] = [{
+  id: "studio",
+  type: "studio",
+  title: "STUDIO APARTMENTS",
+  description: "Spaces created to be functional, providing everything you need in a practical environment with a modern and inviting design.",
+  images: ["/lovable-uploads/c9b1fdff-26ae-4e8d-8a60-c566edd614fe.png"],
+  features: {
+    bathrooms: 1,
+    bedType: "Double bed",
+    wifi: true,
+    furnished: true,
+    size: "From 36 m²",
+    parking: "Optional car park",
+    climate: "Air conditioning and heating"
   },
-  {
-    id: "one-bedroom",
-    type: "1 bedroom",
-    title: "1-BEDROOM APARTMENTS",
-    description: "Designed for comfort and efficiency, making the best use of space with a contemporary aesthetic.",
-    images: ["/lovable-uploads/c9b1fdff-26ae-4e8d-8a60-c566edd614fe.png"],
-    features: {
-      bathrooms: 1,
-      bedType: "Double bed",
-      wifi: true,
-      furnished: true,
-      size: "From 45 m²",
-      parking: "Optional car park",
-      climate: "Air conditioning and heating"
-    },
-    price: {
-      amount: 1620,
-      period: "/month",
-      condition: "(unfurnished)"
-    }
+  price: {
+    amount: 955,
+    period: "/month",
+    condition: "(furnished)"
   }
-];
-
+}, {
+  id: "one-bedroom",
+  type: "1 bedroom",
+  title: "1-BEDROOM APARTMENTS",
+  description: "Designed for comfort and efficiency, making the best use of space with a contemporary aesthetic.",
+  images: ["/lovable-uploads/c9b1fdff-26ae-4e8d-8a60-c566edd614fe.png"],
+  features: {
+    bathrooms: 1,
+    bedType: "Double bed",
+    wifi: true,
+    furnished: true,
+    size: "From 45 m²",
+    parking: "Optional car park",
+    climate: "Air conditioning and heating"
+  },
+  price: {
+    amount: 1620,
+    period: "/month",
+    condition: "(unfurnished)"
+  }
+}];
 const ApartmentCarousel = () => {
   const [currentApartmentIndex, setCurrentApartmentIndex] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
   const currentApartment = apartments[currentApartmentIndex];
-  
   const nextApartment = () => {
-    setCurrentApartmentIndex((prev) => (prev + 1) % apartments.length);
+    setCurrentApartmentIndex(prev => (prev + 1) % apartments.length);
     setCurrentImageIndex(0);
   };
-  
   const prevApartment = () => {
-    setCurrentApartmentIndex((prev) => (prev - 1 + apartments.length) % apartments.length);
+    setCurrentApartmentIndex(prev => (prev - 1 + apartments.length) % apartments.length);
     setCurrentImageIndex(0);
   };
-  
   const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % currentApartment.images.length);
+    setCurrentImageIndex(prev => (prev + 1) % currentApartment.images.length);
   };
-  
   const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + currentApartment.images.length) % currentApartment.images.length);
+    setCurrentImageIndex(prev => (prev - 1 + currentApartment.images.length) % currentApartment.images.length);
   };
-
-  return (
-    <div className="py-16 md:py-24 bg-background">
+  return <div className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row lg:space-x-8">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
             <div className="relative overflow-hidden rounded-lg">
-              <img 
-                src={currentApartment.images[currentImageIndex]} 
-                alt={currentApartment.title} 
-                className="w-full h-[400px] md:h-[500px] object-cover"
-              />
               
-              {currentApartment.images.length > 1 && (
-                <>
-                  <button 
-                    onClick={prevImage}
-                    className="carousel-button left-4"
-                    aria-label="Previous image"
-                  >
+              
+              {currentApartment.images.length > 1 && <>
+                  <button onClick={prevImage} className="carousel-button left-4" aria-label="Previous image">
                     <ArrowLeft size={20} />
                   </button>
-                  <button 
-                    onClick={nextImage}
-                    className="carousel-button right-4"
-                    aria-label="Next image"
-                  >
+                  <button onClick={nextImage} className="carousel-button right-4" aria-label="Next image">
                     <ArrowRight size={20} />
                   </button>
-                </>
-              )}
+                </>}
             </div>
           </div>
           
@@ -130,18 +102,10 @@ const ApartmentCarousel = () => {
             <div className="flex items-center justify-between mb-6">
               <h2 className="apartment-heading text-5xl">{currentApartment.title}</h2>
               <div className="flex space-x-2">
-                <button 
-                  onClick={prevApartment}
-                  className="carousel-button !static !translate-y-0 !bg-black/10 !hover:bg-black/20 !w-10 !h-10"
-                  aria-label="Previous apartment"
-                >
+                <button onClick={prevApartment} className="carousel-button !static !translate-y-0 !bg-black/10 !hover:bg-black/20 !w-10 !h-10" aria-label="Previous apartment">
                   <ArrowLeft size={18} className="text-black" />
                 </button>
-                <button 
-                  onClick={nextApartment}
-                  className="carousel-button !static !translate-y-0 !bg-black/10 !hover:bg-black/20 !w-10 !h-10"
-                  aria-label="Next apartment"
-                >
+                <button onClick={nextApartment} className="carousel-button !static !translate-y-0 !bg-black/10 !hover:bg-black/20 !w-10 !h-10" aria-label="Next apartment">
                   <ArrowRight size={18} className="text-black" />
                 </button>
               </div>
@@ -184,9 +148,7 @@ const ApartmentCarousel = () => {
                 <span className="text-4xl font-semibold">{currentApartment.price.amount}€</span>
                 <span className="text-xl ml-1">{currentApartment.price.period}</span>
               </div>
-              {currentApartment.price.condition && (
-                <div className="text-sm text-gray-500">{currentApartment.price.condition}</div>
-              )}
+              {currentApartment.price.condition && <div className="text-sm text-gray-500">{currentApartment.price.condition}</div>}
             </div>
             
             <button className="bg-black text-white px-6 py-3 font-medium hover:bg-black/80 transition">
@@ -195,8 +157,6 @@ const ApartmentCarousel = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default ApartmentCarousel;

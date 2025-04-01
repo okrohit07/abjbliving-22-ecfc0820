@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 md:px-6 z-10 text-white text-center">
         <h2 className="text-lg md:text-xl uppercase tracking-widest mb-2 md:mb-4">BIENVENIDO A ABJB</h2>
         
-        <h1 className="hero-heading text-4xl md:text-6xl lg:text-8xl mb-6 md:mb-8 max-w-4xl mx-auto">VIVE LA EXPERIENCIA QUE SIEMPRE IMAGINASTE</h1>
+        <h1 className="hero-heading md:text-6xl lg:text-8xl mb-6 md:mb-8 max-w-4xl mx-auto text-4xl">VIVE LA EXPERIENCIA QUE SIEMPRE IMAGINASTE</h1>
         
         <p className="text-xl mb-8 max-w-2xl mx-auto md:text-base">
           Exclusividad, comunidad, tecnología y sostenibilidad en perfecta armonía

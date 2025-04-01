@@ -15,24 +15,17 @@ const Hero = () => {
           Exclusividad, comunidad, tecnología y sostenibilidad en perfecta armonía
         </p>
         
-        <Link to="/find-room" className="inline-flex items-center bg-black/70 hover:bg-black transition-colors px-6 py-3 text-lg uppercase tracking-wider">
+        <Link to="/find-room" className="inline-flex items-center bg-black/70 hover:bg-black transition-colors py-3 text-lg uppercase tracking-wider px-[19px]">
           <Search size={18} className="mr-2" /> Descubre Tu Espacio
         </Link>
       </div>
 
       <div className="absolute bottom-8 left-0 right-0 flex justify-center">
-        <div className="community-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-            <path d="M12 17h.01"></path>
-          </svg>
-        </div>
+        
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 text-center py-4 text-white/80 text-sm">
-        abjb.com
-      </div>
+    </div>
     </div>;
 };
 export default Hero;

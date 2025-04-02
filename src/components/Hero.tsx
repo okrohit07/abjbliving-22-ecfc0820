@@ -17,7 +17,7 @@ const Hero = () => {
           />
         </div>
         
-        <div className="relative z-10 bg-black/50 p-8 rounded-lg">
+        <div className="relative z-10 p-8 rounded-lg">
           <h2 className="text-lg uppercase tracking-widest mb-2 md:mb-4 my-[40px] md:text-base">BIENVENIDO A ABJB</h2>
           
           <h1 className="hero-heading md:text-6xl lg:text-8xl mb-6 md:mb-8 max-w-4xl mx-auto text-3xl">VIVE LA EXPERIENCIA QUE SIEMPRE IMAGINASTE</h1>

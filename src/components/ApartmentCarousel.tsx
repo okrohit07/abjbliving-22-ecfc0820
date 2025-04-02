@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight, Bath, Bed, Wifi, Home, Car, Thermometer } from 'lucide-react';
 interface ApartmentProps {
@@ -82,7 +83,7 @@ const ApartmentCarousel = () => {
   };
   return <div className="py-16 bg-background md:py-[96px]">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col lg:flex-row lg:space-x-8">
+        <div className="flex flex-col lg:flex-row lg:space-x-8 justify-center max-w-5xl mx-auto">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
             <div className="relative overflow-hidden rounded-lg">
               

@@ -6,7 +6,7 @@ const Hero = () => {
   }}>
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent my-[70px]"></div>
       
-      <div className="container mx-auto px-4 md:px-6 z-10 text-white text-center my-[60px]">
+      <div className="container mx-auto px-4 md:px-6 z-10 text-white text-center my-[80px]">
         <h2 className="text-lg uppercase tracking-widest mb-2 md:mb-4 my-[40px] md:text-base">BIENVENIDO A ABJB</h2>
         
         <h1 className="hero-heading md:text-6xl lg:text-8xl mb-6 md:mb-8 max-w-4xl mx-auto text-3xl">VIVE LA EXPERIENCIA QUE SIEMPRE IMAGINASTE</h1>

@@ -12,8 +12,7 @@ const Hero = () => {
         </div>
         
         <div className="relative z-10 p-8 rounded-lg flex flex-col items-center justify-center">
-          <h2 className="text-base uppercase tracking-widest mb-2 md:mb-4 text-center">
-
+          <h2 className="text-base uppercase tracking-widest mb-2 md:mb-4 text-center">.
 
 
 
@@ -32,7 +31,7 @@ VIVE LA EXPERIENCIA QUE SIEMPRE IMAGINASTE</h1>
 
 
 
-Exclusividad, comunidad, tecnología y sostenibilidad en perfecta armonía</p>
+Exclusividad, comunidad, tecnología y sostenibilidad en perfecta armonía.</p>
           
           <Link to="/find-room" className="inline-flex items-center bg-black/70 hover:bg-black transition-colors py-2 text-base uppercase tracking-wider px-4">
             <Search size={16} className="mr-2" /> Descubre Tu Espacio

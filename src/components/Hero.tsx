@@ -18,17 +18,17 @@ const Hero = () => {
 
 
 
-
-
-
-
 BIENVENIDO A ABJB</h2>
           
           <h1 className="hero-heading md:text-5xl lg:text-7xl mb-6 md:mb-8 max-w-4xl mx-auto text-2xl text-center">
 
+
+
 VIVE LA EXPERIENCIA QUE SIEMPRE IMAGINASTE</h1>
           
           <p className="mb-8 max-w-2xl mx-auto font-thin md:text-base text-center text-base">
+
+
 
 Exclusividad, comunidad, tecnología y sostenibilidad en perfecta armonía</p>
           

@@ -1,6 +1,5 @@
-
 import { useState } from 'react';
-import { ArrowLeft, ArrowRight, Bath, Bed, Wifi, Home, Car, Thermometer } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Bath, Bed, Wifi, Home, Car, User } from 'lucide-react';
 import { 
   Carousel,
   CarouselContent,
@@ -198,7 +197,7 @@ const ApartmentCard = ({ apartment }: { apartment: ApartmentProps }) => {
           <span>{apartment.features.bedType}</span>
         </div>
         <div className="flex items-center">
-          <Thermometer className="w-3 h-3 mr-1 opacity-80" />
+          <User className="w-3 h-3 mr-1 opacity-80" />
           <span>{apartment.features.pax}</span>
         </div>
       </div>

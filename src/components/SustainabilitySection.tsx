@@ -7,7 +7,7 @@ const SustainabilitySection = () => {
     <div 
       className="relative py-16 md:py-24 bg-cover bg-center text-white"
       style={{ 
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/lovable-uploads/f41a175c-7eb1-4094-9bc5-c6ed5fd0340d.png)' 
+        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/lovable-uploads/438883b0-ffdc-4170-80dd-fe2e1e51b951.png)' 
       }}
     >
       <div className="container mx-auto px-4 md:px-6">

@@ -125,7 +125,6 @@ const apartments: ApartmentProps[] = [{
     period: "/mes"
   }
 }];
-
 const ApartmentCard = ({
   apartment
 }: {
@@ -191,11 +190,10 @@ const ApartmentCard = ({
       </div>
     </div>;
 };
-
 const ApartmentCarousel = () => {
   return <div className="py-12 bg-background md:py-16">
       <div className="container mx-auto px-4 md:px-6">
-        <h2 className="text-2xl md:text-3xl font-serif text-center mb-8">Our Apartments</h2>
+        <h2 className="text-2xl md:text-3xl font-serif text-center mb-8">Nuestros apartamentos</h2>
         
         <Carousel className="max-w-5xl mx-auto">
           <CarouselContent>
@@ -216,5 +214,4 @@ const ApartmentCarousel = () => {
       </div>
     </div>;
 };
-
 export default ApartmentCarousel;

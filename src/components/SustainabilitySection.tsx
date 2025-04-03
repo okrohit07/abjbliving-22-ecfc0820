@@ -1,19 +1,13 @@
-
 import { Leaf, Recycle, Wind, Droplet } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const SustainabilitySection = () => {
-  return (
-    <div 
-      className="relative py-16 md:py-24 bg-cover bg-center text-white"
-      style={{ 
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/lovable-uploads/438883b0-ffdc-4170-80dd-fe2e1e51b951.png)' 
-      }}
-    >
+  return <div className="relative py-16 md:py-24 bg-cover bg-center text-white" style={{
+    backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/lovable-uploads/438883b0-ffdc-4170-80dd-fe2e1e51b951.png)'
+  }}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-serif mb-6">COMPROMISO CON LA SOSTENIBILIDAD</h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <h2 className="font-serif mb-6 text-4xl">COMPROMISO CON LA SOSTENIBILIDAD</h2>
+          <p className="text-gray-300 max-w-2xl mx-auto text-base">
             En ABJB, creemos que el lujo y la responsabilidad ambiental pueden coexistir. Nuestro compromiso con la sostenibilidad está presente en cada aspecto de nuestras residencias.
           </p>
         </div>
@@ -61,16 +55,11 @@ const SustainabilitySection = () => {
         </div>
         
         <div className="text-center">
-          <Link
-            to="/about"
-            className="inline-flex items-center px-6 py-3 border border-white hover:bg-white hover:text-black transition-colors"
-          >
+          <Link to="/about" className="inline-flex items-center px-6 py-3 border border-white hover:bg-white hover:text-black transition-colors">
             CONOCE MÁS SOBRE NUESTRAS INICIATIVAS
           </Link>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default SustainabilitySection;

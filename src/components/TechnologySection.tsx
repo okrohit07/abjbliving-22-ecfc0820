@@ -1,13 +1,10 @@
-
 import { Smartphone, Cpu, Shield, Lightbulb } from 'lucide-react';
-
 const TechnologySection = () => {
-  return (
-    <div className="py-16 md:py-24 bg-background">
+  return <div className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-serif mb-6">TECNOLOGÍA AVANZADA</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <h2 className="font-serif mb-6 text-4xl">TECNOLOGÍA AVANZADA</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-base">
             En ABJB, la tecnología no es solo una comodidad, es parte integral de nuestra filosofía para ofrecerte la experiencia de vida más innovadora y conectada.
           </p>
         </div>
@@ -62,8 +59,6 @@ const TechnologySection = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default TechnologySection;

@@ -1,17 +1,14 @@
-
 import { Facebook, Instagram, Twitter, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const Footer = () => {
-  return (
-    <footer className="bg-black text-white">
+  return <footer className="bg-black text-white">
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
         <div className="flex flex-col md:flex-row justify-between mb-12 md:mb-16">
           <div className="mb-8 md:mb-0">
             <Link to="/" className="text-3xl font-serif font-bold tracking-tight block mb-6">
               ABJB <span className="font-light">LIVING</span>
             </Link>
-            <p className="max-w-xs text-gray-300 mb-6">
+            <p className="max-w-xs text-gray-300 mb-6 text-sm">
               Elevando tu estilo de vida con nuestros espacios de coliving premium diseñados para una vida moderna, conectada y sostenible.
             </p>
             <div className="flex space-x-4">
@@ -136,8 +133,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

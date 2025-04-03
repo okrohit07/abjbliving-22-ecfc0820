@@ -1,13 +1,10 @@
-
 import { Users, Coffee, Dumbbell, Wifi } from 'lucide-react';
-
 const CommunitySection = () => {
-  return (
-    <div className="py-16 md:py-24 bg-white">
+  return <div className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-serif mb-6">COMUNIDAD EXCLUSIVA</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <h2 className="font-serif mb-6 text-4xl">COMUNIDAD EXCLUSIVA</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-base">
             Únete a una comunidad exclusiva de mentes brillantes e inspiradoras. Nuestros espacios están diseñados para fomentar conexiones significativas mientras respetan tu privacidad.
           </p>
         </div>
@@ -54,8 +51,6 @@ const CommunitySection = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default CommunitySection;

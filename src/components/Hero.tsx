@@ -8,7 +8,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 md:px-6 z-10 text-white text-center my-[80px] relative">
         <div className="absolute inset-0 flex justify-center items-center">
-          <img src="/lovable-uploads/3bd870a2-7898-4890-a275-cbee1dbc4c52.png" alt="Intimate moment" className="w-full h-full opacity-85 object-contain" />
+          <img src="/lovable-uploads/3bd870a2-7898-4890-a275-cbee1dbc4c52.png" alt="Intimate moment" className="w-full h-full opacity-85 object-scale-down" />
         </div>
         
         <div className="relative z-10 p-8 rounded-lg px-[50px] py-[120px]">
@@ -30,7 +30,7 @@ VIVE LA EXPERIENCIA QUE SIEMPRE IMAGINASTE</h1>
 
 Exclusividad, comunidad, tecnología y sostenibilidad en perfecta armonía</p>
           
-          <Link to="/find-room" className="inline-flex items-center bg-black/70 hover:bg-black transition-colors py-3 text-lg uppercase tracking-wider px-[19px]">
+          <Link to="/find-room" className="inline-flex items-center bg-black/70 hover:bg-black transition-colors text-lg uppercase tracking-wider px-[5px] py-px">
             <Search size={18} className="mr-2" /> Descubre Tu Espacio
           </Link>
         </div>

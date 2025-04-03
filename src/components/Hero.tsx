@@ -30,7 +30,7 @@ VIVE LA EXPERIENCIA QUE SIEMPRE IMAGINASTE</h1>
 
 Exclusividad, comunidad, tecnología y sostenibilidad en perfecta armonía</p>
           
-          <Link to="/find-room" className="inline-flex items-center bg-black/70 hover:bg-black transition-colors text-lg uppercase tracking-wider px-[5px] py-px">
+          <Link to="/find-room" className="inline-flex items-center bg-black/70 hover:bg-black transition-colors text-lg uppercase tracking-wider px-[12px] py-[10px]">
             <Search size={18} className="mr-2" /> Descubre Tu Espacio
           </Link>
         </div>

@@ -6,10 +6,7 @@ const SustainabilitySection = () => {
   }}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-serif mb-6 text-4xl">COMPROMISO CON LA SOSTENIBILIDAD
-
-
-UN EDIFICIO QUE SE PREOCUPA POR EL MEDIOAMBIENTE</h2>
+          <h2 className="font-serif mb-6 text-4xl">COMPROMISO CON LA SOSTENIBILIDAD</h2>
           <p className="text-gray-300 max-w-2xl mx-auto text-base">
             En ABJB, creemos que el lujo y la responsabilidad ambiental pueden coexistir. Nuestro compromiso con la sostenibilidad está presente en cada aspecto de nuestras residencias.
           </p>

@@ -24,11 +24,10 @@ interface ApartmentProps {
   price: {
     amount: number;
     period: string;
-    condition?: string;
   };
 }
 
-// Updated with new apartment information
+// Updated with new apartment information and prices
 const apartments: ApartmentProps[] = [{
   id: "street-view",
   type: "apartment",
@@ -50,9 +49,8 @@ const apartments: ApartmentProps[] = [{
     smartHome: true
   },
   price: {
-    amount: 955,
-    period: "/mes",
-    condition: "(amueblado)"
+    amount: 2100,
+    period: "/mes"
   }
 }, {
   id: "street-view-studio",
@@ -75,9 +73,8 @@ const apartments: ApartmentProps[] = [{
     smartHome: true
   },
   price: {
-    amount: 1620,
-    period: "/mes",
-    condition: "(sin amueblar)"
+    amount: 2000,
+    period: "/mes"
   }
 }, {
   id: "standard-studio-twin",
@@ -100,9 +97,8 @@ const apartments: ApartmentProps[] = [{
     smartHome: true
   },
   price: {
-    amount: 2250,
-    period: "/mes",
-    condition: "(amueblado)"
+    amount: 1800,
+    period: "/mes"
   }
 }, {
   id: "deluxe-apartment",
@@ -125,11 +121,11 @@ const apartments: ApartmentProps[] = [{
     smartHome: true
   },
   price: {
-    amount: 3500,
-    period: "/mes",
-    condition: "(totalmente amueblado)"
+    amount: 2500,
+    period: "/mes"
   }
 }];
+
 const ApartmentCard = ({
   apartment
 }: {
@@ -195,6 +191,7 @@ const ApartmentCard = ({
       </div>
     </div>;
 };
+
 const ApartmentCarousel = () => {
   return <div className="py-12 bg-background md:py-16">
       <div className="container mx-auto px-4 md:px-6">
@@ -219,4 +216,5 @@ const ApartmentCarousel = () => {
       </div>
     </div>;
 };
+
 export default ApartmentCarousel;

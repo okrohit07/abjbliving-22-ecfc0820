@@ -1,13 +1,6 @@
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight, Bath, Bed, Wifi, Home, Car, User } from 'lucide-react';
-import { 
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 interface ApartmentProps {
   id: string;
   type: string;
@@ -137,44 +130,29 @@ const apartments: ApartmentProps[] = [{
     condition: "(totalmente amueblado)"
   }
 }];
-
-const ApartmentCard = ({ apartment }: { apartment: ApartmentProps }) => {
+const ApartmentCard = ({
+  apartment
+}: {
+  apartment: ApartmentProps;
+}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
   const nextImage = () => {
     setCurrentImageIndex(prev => (prev + 1) % apartment.images.length);
   };
-  
   const prevImage = () => {
     setCurrentImageIndex(prev => (prev - 1 + apartment.images.length) % apartment.images.length);
   };
-  
-  return (
-    <div className="flex flex-col h-full">
+  return <div className="flex flex-col h-full">
       <div className="relative overflow-hidden rounded-lg mb-4 aspect-[4/3]">
-        <img 
-          src={apartment.images[currentImageIndex]} 
-          alt={apartment.title} 
-          className="w-full h-full object-cover"
-        />
-        {apartment.images.length > 1 && (
-          <>
-            <button 
-              onClick={prevImage} 
-              className="carousel-button left-2" 
-              aria-label="Previous image"
-            >
+        <img src={apartment.images[currentImageIndex]} alt={apartment.title} className="w-full h-full object-cover" />
+        {apartment.images.length > 1 && <>
+            <button onClick={prevImage} className="carousel-button left-2" aria-label="Previous image">
               <ArrowLeft size={18} />
             </button>
-            <button 
-              onClick={nextImage} 
-              className="carousel-button right-2" 
-              aria-label="Next image"
-            >
+            <button onClick={nextImage} className="carousel-button right-2" aria-label="Next image">
               <ArrowRight size={18} />
             </button>
-          </>
-        )}
+          </>}
       </div>
       
       <h3 className="text-lg font-serif mb-2">{apartment.title}</h3>
@@ -203,43 +181,35 @@ const ApartmentCard = ({ apartment }: { apartment: ApartmentProps }) => {
       </div>
       
       <div className="mt-auto">
-        <div className="text-xs text-gray-500">desde</div>
+        <div className="text-xs text-gray-500">
+      </div>
         <div className="flex items-baseline">
           <span className="text-xl font-semibold">{apartment.price.amount}€</span>
           <span className="text-xs ml-1">{apartment.price.period}</span>
         </div>
-        {apartment.price.condition && (
-          <div className="text-xs text-gray-500">{apartment.price.condition}</div>
-        )}
+        {apartment.price.condition && <div className="text-xs text-gray-500">{apartment.price.condition}</div>}
         
         <button className="w-full bg-black text-white px-3 py-1.5 mt-2 font-medium hover:bg-black/80 transition text-xs">
           VER DETALLES
         </button>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 const ApartmentCarousel = () => {
-  return (
-    <div className="py-12 bg-background md:py-16">
+  return <div className="py-12 bg-background md:py-16">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="text-2xl md:text-3xl font-serif text-center mb-8">Our Apartments</h2>
         
         <Carousel className="max-w-5xl mx-auto">
           <CarouselContent>
             {/* Group apartments in pairs */}
-            {[0, 2].map((startIdx) => (
-              <CarouselItem key={startIdx} className="md:basis-full">
+            {[0, 2].map(startIdx => <CarouselItem key={startIdx} className="md:basis-full">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {apartments.slice(startIdx, startIdx + 2).map((apartment) => (
-                    <div key={apartment.id} className="h-full">
+                  {apartments.slice(startIdx, startIdx + 2).map(apartment => <div key={apartment.id} className="h-full">
                       <ApartmentCard apartment={apartment} />
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
-              </CarouselItem>
-            ))}
+              </CarouselItem>)}
           </CarouselContent>
           <div className="flex justify-center mt-6">
             <CarouselPrevious className="relative inset-0 translate-y-0 !bg-black/10 !hover:bg-black/20 !border-none !w-10 !h-10 mr-2" />
@@ -247,8 +217,6 @@ const ApartmentCarousel = () => {
           </div>
         </Carousel>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default ApartmentCarousel;

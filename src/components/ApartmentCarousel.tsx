@@ -18,11 +18,16 @@ interface ApartmentProps {
   features: {
     bathrooms: number;
     bedType: string;
+    pax: string;
     wifi: boolean;
-    furnished: boolean;
     size: string;
-    parking: string;
+    parking: boolean;
+    smartTv: boolean;
+    fullKitchen: boolean;
     climate: string;
+    amenities: boolean;
+    accessibility: boolean;
+    smartHome: boolean;
   };
   price: {
     amount: number;
@@ -31,86 +36,106 @@ interface ApartmentProps {
   };
 }
 
-// Actualizado con las nuevas imágenes
+// Updated with new apartment information
 const apartments: ApartmentProps[] = [{
-  id: "studio",
-  type: "studio",
-  title: "STUDIO APARTMENTS",
-  description: "Espacios creados para ser funcionales, proporcionando todo lo que necesitas en un ambiente práctico con un diseño moderno y acogedor.",
+  id: "street-view",
+  type: "apartment",
+  title: "STREET VIEW APARTMENT",
+  description: "Acogedor apartamento con impresionantes vistas al bulevar de Juan Bravo. Espacio creado para ser funcional, proporcionando todo lo que necesitas en un ambiente práctico con un diseño moderno.",
   images: ["/lovable-uploads/f55620b5-ae48-47a7-be46-aede9cdf47cd.png"],
   features: {
     bathrooms: 1,
-    bedType: "Double bed",
+    bedType: "2 camas individuales",
+    pax: "2 pax",
     wifi: true,
-    furnished: true,
-    size: "From 36 m²",
-    parking: "Optional car park",
-    climate: "Air conditioning and heating"
+    size: "40 m²",
+    parking: true,
+    smartTv: true,
+    fullKitchen: true,
+    climate: "Calefacción/Refrigeración",
+    amenities: true,
+    accessibility: true,
+    smartHome: true
   },
   price: {
     amount: 955,
-    period: "/month",
-    condition: "(furnished)"
+    period: "/mes",
+    condition: "(amueblado)"
   }
 }, {
-  id: "one-bedroom",
-  type: "1 bedroom",
-  title: "1-BEDROOM APARTMENTS",
-  description: "Diseñados para comodidad y eficiencia, aprovechando al máximo el espacio con una estética contemporánea.",
+  id: "street-view-studio",
+  type: "studio",
+  title: "STREET VIEW STUDIO",
+  description: "Estudio con vistas a la ciudad, ideal tanto para estancias en solitario como en pareja. Diseñado para proporcionar confort en un espacio optimizado.",
   images: ["/lovable-uploads/37d7672f-2797-4c56-b644-0d223cf2ce70.png"],
   features: {
     bathrooms: 1,
-    bedType: "Double bed",
+    bedType: "1 cama doble",
+    pax: "1-2 pax",
     wifi: true,
-    furnished: true,
-    size: "From 45 m²",
-    parking: "Optional car park",
-    climate: "Air conditioning and heating"
+    size: "35 m²",
+    parking: true,
+    smartTv: true,
+    fullKitchen: true,
+    climate: "Calefacción/Refrigeración",
+    amenities: true,
+    accessibility: true,
+    smartHome: true
   },
   price: {
     amount: 1620,
-    period: "/month",
-    condition: "(unfurnished)"
+    period: "/mes",
+    condition: "(sin amueblar)"
   }
 }, {
-  id: "two-bedroom",
-  type: "2 bedrooms",
-  title: "2-BEDROOM APARTMENTS",
-  description: "Amplias áreas de estar con dormitorios separados, perfectos para compartir o familias que buscan espacio y confort adicional.",
+  id: "standard-studio-twin",
+  type: "studio twin",
+  title: "STANDARD STUDIO TWIN",
+  description: "Estudio perfecto para parejas, diseñados para comodidad y privacidad, aprovechando al máximo el espacio con una estética contemporánea.",
   images: ["/lovable-uploads/9d67340a-5162-4a7d-9c29-6e7da1bfc070.png"],
   features: {
-    bathrooms: 2,
-    bedType: "Queen beds",
+    bathrooms: 1,
+    bedType: "2 camas individuales",
+    pax: "2 pax",
     wifi: true,
-    furnished: true,
-    size: "From 65 m²",
-    parking: "Included parking",
-    climate: "Air conditioning and heating"
+    size: "30 m²",
+    parking: true,
+    smartTv: true,
+    fullKitchen: true,
+    climate: "Calefacción/Refrigeración",
+    amenities: true,
+    accessibility: true,
+    smartHome: true
   },
   price: {
     amount: 2250,
-    period: "/month",
-    condition: "(furnished)"
+    period: "/mes",
+    condition: "(amueblado)"
   }
 }, {
-  id: "luxury-suite",
-  type: "luxury suite",
-  title: "LUXURY SUITES",
-  description: "Apartamentos premium con acabados de alta gama, espacios de vida ampliados y comodidades premium para aquellos que buscan el máximo confort.",
+  id: "deluxe-apartment",
+  type: "deluxe",
+  title: "DELUXE APARTMENT",
+  description: "Apartamento elegante y espacioso, con diseño moderno y premium. Una experiencia de lujo para aquellos que buscan lo mejor en confort y estilo.",
   images: ["/lovable-uploads/8733dfb8-abd8-48c1-a120-3bfa7952a9d0.png"],
   features: {
-    bathrooms: 2,
-    bedType: "King bed",
+    bathrooms: 1,
+    bedType: "1 cama doble",
+    pax: "2 pax",
     wifi: true,
-    furnished: true,
-    size: "From 85 m²",
-    parking: "Premium parking included",
-    climate: "Smart climate control"
+    size: "45 m²",
+    parking: true,
+    smartTv: true,
+    fullKitchen: true,
+    climate: "Calefacción/Refrigeración",
+    amenities: true,
+    accessibility: true,
+    smartHome: true
   },
   price: {
     amount: 3500,
-    period: "/month",
-    condition: "(fully furnished)"
+    period: "/mes",
+    condition: "(totalmente amueblado)"
   }
 }];
 
@@ -162,7 +187,7 @@ const ApartmentCard = ({ apartment }: { apartment: ApartmentProps }) => {
       <div className="grid grid-cols-2 gap-y-2 mb-4 border-l-2 border-gray-300 pl-3 text-xs">
         <div className="flex items-center">
           <Bath className="w-3 h-3 mr-1 opacity-80" />
-          <span>{apartment.features.bathrooms} bathroom</span>
+          <span>{apartment.features.bathrooms} baño</span>
         </div>
         <div className="flex items-center">
           <Home className="w-3 h-3 mr-1 opacity-80" />
@@ -174,12 +199,12 @@ const ApartmentCard = ({ apartment }: { apartment: ApartmentProps }) => {
         </div>
         <div className="flex items-center">
           <Thermometer className="w-3 h-3 mr-1 opacity-80" />
-          <span>{apartment.features.climate}</span>
+          <span>{apartment.features.pax}</span>
         </div>
       </div>
       
       <div className="mt-auto">
-        <div className="text-xs text-gray-500">from</div>
+        <div className="text-xs text-gray-500">desde</div>
         <div className="flex items-baseline">
           <span className="text-xl font-semibold">{apartment.price.amount}€</span>
           <span className="text-xs ml-1">{apartment.price.period}</span>
@@ -189,7 +214,7 @@ const ApartmentCard = ({ apartment }: { apartment: ApartmentProps }) => {
         )}
         
         <button className="w-full bg-black text-white px-3 py-1.5 mt-2 font-medium hover:bg-black/80 transition text-xs">
-          VIEW DETAILS
+          VER DETALLES
         </button>
       </div>
     </div>

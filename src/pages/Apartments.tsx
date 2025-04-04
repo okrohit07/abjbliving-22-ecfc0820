@@ -1,16 +1,13 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ApartmentCarousel from "@/components/ApartmentCarousel";
 import CallToAction from "@/components/CallToAction";
-
 const Apartments = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navbar />
       <div className="pt-24 pb-8 bg-background">
         <div className="container mx-auto px-4 md:px-6">
-          <h1 className="text-5xl md:text-6xl font-serif mb-6">Our Apartments</h1>
+          <h1 className="text-5xl md:text-6xl font-serif mb-6">Nuestros apartamentos</h1>
           <p className="text-xl text-gray-600 max-w-3xl">
             Discover our selection of beautifully designed living spaces that combine comfort, functionality, and style. Each apartment is thoughtfully crafted to meet your modern lifestyle needs.
           </p>
@@ -43,8 +40,6 @@ const Apartments = () => {
       </div>
       <CallToAction />
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Apartments;

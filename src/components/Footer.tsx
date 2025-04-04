@@ -8,8 +8,7 @@ const Footer = () => {
             <Link to="/" className="text-3xl font-serif font-bold tracking-tight block mb-6">
               ABJB <span className="font-light"></span>
             </Link>
-            <p className="max-w-xs text-gray-300 mb-6 text-xs">Elevando tu estilo de vida 
-con nuestros espacios de coliving premium diseñados para una vida moderna, conectada y sostenible.</p>
+            <p className="max-w-xs text-gray-300 mb-6 text-xs px-0 mx-0 my-[20px]">Elevando tu estilo de vida con nuestros espacios de coliving premium diseñados para una vida moderna, conectada y sostenible.</p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-gray-400 transition">
                 <Facebook size={20} />

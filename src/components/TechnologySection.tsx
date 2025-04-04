@@ -4,7 +4,7 @@ const TechnologySection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-serif mb-6 text-4xl">TECNOLOGÍA AVANZADA</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-base">
+          <p className="text-gray-600 max-w-2xl mx-auto text-justify text-sm">
             En ABJB, la tecnología no es solo una comodidad, es parte integral de nuestra filosofía para ofrecerte la experiencia de vida más innovadora y conectada.
           </p>
         </div>

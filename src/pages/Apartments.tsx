@@ -21,7 +21,7 @@ const Apartments = () => {
             </div>
             <div className="bg-background p-8">
               <h3 className="text-2xl font-serif mb-4">Contratos flexibles</h3>
-              <p className="text-gray-600 mb-4 text-xs">Sabemos que cada residente tiene sus propias necesidades, por eso ofrecemos contratos flexibles que se adaptan a tus planes. Ya sea que busques una estancia corta o a largo plazo, en ABJB tenemos opciones que se ajustan a tu ritmo de vida.</p>
+              <p className="text-gray-600 mb-4 text-xs">Sabemos que cada residente tiene sus propias necesidades, por eso ofrecemos contratos flexibles adaptados a ellas. Ya sea que busques una estancia corta o a largo plazo, en ABJB tenemos opciones que se ajustan a tu ritmo de vida.</p>
             </div>
             <div className="bg-background p-8">
               <h3 className="text-2xl font-serif mb-4">Ubicación privilegiada</h3>

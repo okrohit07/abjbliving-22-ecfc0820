@@ -6,11 +6,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between mb-12 md:mb-16">
           <div className="mb-8 md:mb-0">
             <Link to="/" className="text-3xl font-serif font-bold tracking-tight block mb-6">
-              ABJB <span className="font-light">LIVING</span>
+              ABJB <span className="font-light"></span>
             </Link>
-            <p className="max-w-xs text-gray-300 mb-6 text-xs">
-              Elevando tu estilo de vida con nuestros espacios de coliving premium diseñados para una vida moderna, conectada y sostenible.
-            </p>
+            <p className="max-w-xs text-gray-300 mb-6 text-xs">Elevando tu estilo de vida 
+con nuestros espacios de coliving premium diseñados para una vida moderna, conectada y sostenible.</p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-gray-400 transition">
                 <Facebook size={20} />

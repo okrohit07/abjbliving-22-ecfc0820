@@ -23,21 +23,15 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/apartments" className="text-sm font-medium hover:text-black/70 transition">
-            RESIDENCIAS
-          </Link>
+          <Link to="/apartments" className="text-sm font-medium hover:text-black/70 transition">NUESTROS APARTAMENTOS</Link>
           <Link to="/communities" className="text-sm font-medium hover:text-black/70 transition">
             COMUNIDAD
           </Link>
-          <Link to="/amenities" className="text-sm font-medium hover:text-black/70 transition">
-            AMENIDADES
-          </Link>
+          <Link to="/amenities" className="text-sm font-medium hover:text-black/70 transition">SERVICIOS</Link>
           <Link to="/about" className="text-sm font-medium hover:text-black/70 transition">
             NOSOTROS
           </Link>
-          <Link to="/find-room" className="bg-black text-white px-4 py-2 text-sm font-medium hover:bg-black/80 transition">
-            ENCUENTRA TU ESPACIO
-          </Link>
+          <Link to="/find-room" className="bg-black text-white px-4 py-2 text-sm font-medium hover:bg-black/80 transition">DESCUBRE TU ESPACIO</Link>
         </nav>
 
         {/* Mobile menu button */}

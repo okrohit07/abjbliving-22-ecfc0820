@@ -39,7 +39,7 @@ const Communities = () => {
             </div>
             <div>
               <h2 className="text-4xl font-serif mb-6">Valores de nuestra comunidad</h2>
-              <p className="text-gray-600 mb-6 text-sm text-justify">En ABJB, nos regimos por principios fundamentales que crean un entorno acogedor, inclusivo y de apoyo para todos. Sabemos que la verdadera fuerza de nuestra comunidad radica en la diversidad y el respeto mutuo, y trabajamos cada día para cultivar un espacio donde cada miembro pueda prosperar, crecer y sentirse valorado. Aquí, el apoyo no es solo un ideal: es el pilar sobre el que se construye nuestra vida diaria.</p>
+              <p className="text-gray-600 mb-6 text-sm text-justify">En ABJB, nos regimos por principios fundamentales que crean un entorno acogedor y de apoyo para todos. Sabemos que la verdadera fuerza de nuestra comunidad radica en el respeto mutuo, y trabajamos cada día para cultivar un espacio donde cada miembro pueda prosperar, crecer y sentirse valorado. Aquí, el apoyo no es solo un ideal: es el pilar sobre el que se construye nuestra vida diaria.</p>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">•</span>

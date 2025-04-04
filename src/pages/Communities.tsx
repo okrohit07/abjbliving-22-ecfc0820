@@ -1,19 +1,14 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CommunitySection from "@/components/CommunitySection";
 import CallToAction from "@/components/CallToAction";
-
 const Communities = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navbar />
       <div className="pt-24 pb-8 bg-background">
         <div className="container mx-auto px-4 md:px-6">
-          <h1 className="text-5xl md:text-6xl font-serif mb-6">Our Communities</h1>
-          <p className="text-xl text-gray-600 max-w-3xl">
-            Experience the power of connection in our thoughtfully designed living spaces where community and personal growth are at the heart of everything we do.
-          </p>
+          <h1 className="text-5xl md:text-6xl font-serif mb-6">Nuestra comunidad</h1>
+          <p className="text-gray-600 max-w-3xl text-sm">Experimenta el poder de la conexión en nuestros espacios de vida cuidadosamente diseñados, donde la comunidad y el crecimiento personal son el corazón de todo lo que hacemos.</p>
         </div>
       </div>
       <CommunitySection />
@@ -73,8 +68,6 @@ const Communities = () => {
       </div>
       <CallToAction />
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Communities;

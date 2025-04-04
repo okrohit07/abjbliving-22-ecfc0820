@@ -1,25 +1,19 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CallToAction from "@/components/CallToAction";
 import { Wifi, Coffee, Tv, Dumbbell, Utensils, Users, Lock, Bike, Check } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Amenities = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navbar />
       
       {/* Hero Section */}
-      <div 
-        className="relative h-[70vh] bg-cover bg-center flex items-end"
-        style={{ 
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/lovable-uploads/f41a175c-7eb1-4094-9bc5-c6ed5fd0340d.png)' 
-        }}
-      >
+      <div className="relative h-[70vh] bg-cover bg-center flex items-end" style={{
+      backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/lovable-uploads/f41a175c-7eb1-4094-9bc5-c6ed5fd0340d.png)'
+    }}>
         <div className="container mx-auto px-4 md:px-6 pb-20">
           <div className="max-w-2xl text-white">
-            <h1 className="text-4xl md:text-6xl font-serif mb-6">Amenidades</h1>
+            <h1 className="text-4xl md:text-6xl font-serif mb-6">Nuestros servicios</h1>
             <p className="text-xl">
               Descubre todas las comodidades y servicios diseñados para elevar tu experiencia de vida.
             </p>
@@ -158,7 +152,9 @@ const Amenities = () => {
                 </li>
               </ul>
             </div>
-            <div className="md:w-1/2 h-auto min-h-[400px] bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/f41a175c-7eb1-4094-9bc5-c6ed5fd0340d.png)' }}></div>
+            <div className="md:w-1/2 h-auto min-h-[400px] bg-cover bg-center" style={{
+            backgroundImage: 'url(/lovable-uploads/f41a175c-7eb1-4094-9bc5-c6ed5fd0340d.png)'
+          }}></div>
           </div>
         </div>
       </div>
@@ -205,8 +201,6 @@ const Amenities = () => {
       
       <CallToAction />
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Amenities;

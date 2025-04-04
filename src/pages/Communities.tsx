@@ -17,7 +17,7 @@ const Communities = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-4xl font-serif mb-6">Eventos y experiencias comunitarias</h2>
-              <p className="text-gray-600 mb-6 text-sm">En ABJB, creemos que la comunidad no solo se vive dentro de los apartamentos, sino que también se extiende a toda la ciudad. Además de los eventos exclusivos organizados en nuestros espacios, la app Bravo Society te permite descubrir y unirte a experiencias únicas con tus compañeros. Ya sea una cena privada, una exposición de arte o una actividad de bienestar, la ciudad se convierte en tu lugar de encuentro.</p>
+              <p className="text-gray-600 mb-6 text-sm text-justify">En ABJB, creemos que la comunidad no solo se vive dentro de los apartamentos, sino que también se extiende a toda la ciudad. Además de los eventos exclusivos organizados en nuestros espacios, la app Bravo Society te permite descubrir y unirte a experiencias únicas con tus compañeros. Ya sea una cena privada, una exposición de arte o una actividad de bienestar, la ciudad se convierte en tu lugar de encuentro.</p>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">•</span>

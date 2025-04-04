@@ -16,8 +16,8 @@ const Apartments = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-background p-8">
-              <h3 className="text-2xl font-serif mb-4">Viviendas todo incluido</h3>
-              <p className="text-gray-600 mb-4">Nuestras viviendas cuentan con todos los servicios que necesitas para una vida cómoda y sin preocupaciones. Desde el mobiliario de lujo hasta el mantenimiento continuo, todo está incluido para que puedas disfrutar de un estilo de vida premium sin complicaciones.</p>
+              <h3 className="text-2xl font-serif mb-4 text-center">Viviendas todo incluido</h3>
+              <p className="text-gray-600 mb-4 text-xs text-center">Nuestras viviendas cuentan con todos los servicios que necesitas para una vida cómoda y sin preocupaciones. Desde el mobiliario de lujo hasta el mantenimiento continuo, todo está incluido para que puedas disfrutar de un estilo de vida premium sin complicaciones.</p>
             </div>
             <div className="bg-background p-8">
               <h3 className="text-2xl font-serif mb-4">Flexible Leasing</h3>

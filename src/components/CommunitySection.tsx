@@ -35,9 +35,7 @@ const CommunitySection = () => {
               <Dumbbell className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-serif mb-4">Bienestar Premium</h3>
-            <p className="text-gray-600">
-              Acceso a gimnasios de alta gama, espacios para yoga y programas de bienestar para mantener un estilo de vida saludable y equilibrado.
-            </p>
+            <p className="text-gray-600">Acceso a gimnasios de alta gama, spa y programas de bienestar para mantener un estilo de vida saludable y equilibrado.</p>
           </div>
           
           <div className="bg-background p-8 text-center shadow-md">

@@ -20,16 +20,12 @@ const Apartments = () => {
               <p className="text-gray-600 mb-4 text-xs text-left">Nuestras viviendas cuentan con todos los servicios que necesitas para una vida cómoda y sin preocupaciones. Desde el mobiliario de lujo hasta el mantenimiento continuo, todo está incluido para que disfrutes de un estilo de vida premium sin complicaciones.</p>
             </div>
             <div className="bg-background p-8">
-              <h3 className="text-2xl font-serif mb-4">Flexible Leasing</h3>
-              <p className="text-gray-600 mb-4">
-                Choose from various lease options to find the perfect arrangement for your lifestyle.
-              </p>
+              <h3 className="text-2xl font-serif mb-4">Contratos flexibles</h3>
+              <p className="text-gray-600 mb-4 text-xs">Sabemos que cada residente tiene sus propias necesidades, por eso ofrecemos contratos flexibles que se adaptan a tus planes. Ya sea que busques una estancia corta o a largo plazo, en ABJB tenemos opciones que se ajustan a tu ritmo de vida.</p>
             </div>
             <div className="bg-background p-8">
-              <h3 className="text-2xl font-serif mb-4">Prime Locations</h3>
-              <p className="text-gray-600 mb-4">
-                All our properties are situated in vibrant neighborhoods with excellent transportation links.
-              </p>
+              <h3 className="text-2xl font-serif mb-4">Ubicación privilegiada</h3>
+              <p className="text-gray-600 mb-4 text-xs">Situadas en una de las zonas más exclusivas de la ciudad, nuestras viviendas ofrecen acceso directo a los mejores restaurantes, tiendas y servicios. Vivir en ABJB es tener la ciudad a tus pies, combinando la comodidad del hogar con la energía y dinamismo del entorno urbano.</p>
             </div>
           </div>
         </div>

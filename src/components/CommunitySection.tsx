@@ -1,5 +1,5 @@
 
-import { Users, Coffee, Dumbbell, Wifi, Shield } from 'lucide-react';
+import { Users, Coffee, Dumbbell, Wifi, Heart } from 'lucide-react';
 const CommunitySection = () => {
   return <div className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
@@ -51,7 +51,7 @@ const CommunitySection = () => {
           
           <div className="bg-background p-8 text-center shadow-md">
             <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
-              <Shield className="h-8 w-8 text-white" />
+              <Heart className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-serif mb-4">Bravo Society</h3>
             <p className="text-gray-600">

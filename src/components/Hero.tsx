@@ -9,7 +9,7 @@ const Hero = () => {
   return <div className="relative w-full h-screen flex items-center justify-center bg-cover bg-center" style={{
     backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/lovable-uploads/f41a175c-7eb1-4094-9bc5-c6ed5fd0340d.png)'
   }}>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent my-[70px]"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent z-0"></div>
       
       <div className="container mx-auto px-4 md:px-6 z-10 text-white text-center my-[80px] relative">
         <div className="absolute inset-0 flex justify-center items-center">

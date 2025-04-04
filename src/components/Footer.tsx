@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-            <div className="px-[20px]">
+            <div className="px-[40px]">
               <h3 className="text-lg font-medium mb-4">Navegación</h3>
               <ul className="space-y-2">
                 <li>

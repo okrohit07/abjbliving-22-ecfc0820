@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ApartmentCarousel from "@/components/ApartmentCarousel";
+import SlidingText from "@/components/SlidingText";
 import CommunitySection from "@/components/CommunitySection";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
@@ -14,6 +15,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <ApartmentCarousel />
+      <SlidingText />
       <CommunitySection />
       <TechnologySection />
       <SustainabilitySection />

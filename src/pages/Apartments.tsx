@@ -25,7 +25,7 @@ const Apartments = () => {
             </div>
             <div className="bg-background p-8">
               <h3 className="text-2xl font-serif mb-4">Ubicación privilegiada</h3>
-              <p className="text-gray-600 mb-4 text-xs">Situadas en una de las zonas más exclusivas de la ciudad, nuestras viviendas ofrecen acceso directo a los mejores restaurantes, tiendas y servicios. Vivir en ABJB es tener la ciudad a tus pies, combinando la comodidad del hogar con la energía y dinamismo del entorno urbano.</p>
+              <p className="text-gray-600 mb-4 text-xs">Situado en una de las zonas más exclusivas de Madrid, vivir en ABJB es tener la ciudad a tus pies, combinando la comodidad del hogar con la energía y dinamismo del entorno urbano.</p>
             </div>
           </div>
         </div>

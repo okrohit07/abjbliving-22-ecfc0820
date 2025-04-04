@@ -21,19 +21,19 @@ const Communities = () => {
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">•</span>
-                  <span>Eventos privados en los espacios comunes</span>
+                  <span className="text-sm">Eventos privados en los espacios comunes</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">•</span>
-                  <span>Acceso a eventos exclusivos a través de la app Bravo Society</span>
+                  <span className="text-sm">Acceso a eventos exclusivos a través de la app Bravo Society</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">•</span>
-                  <span>Experiencias culturales y sociales por la ciudad</span>
+                  <span className="font-normal text-sm">Experiencias culturales y sociales por la ciudad</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">•</span>
-                  <span>Conexiones únicas con tus compañeros de comunidad</span>
+                  <span className="text-sm">Conexiones únicas con tus compañeros de comunidad</span>
                 </li>
               </ul>
             </div>

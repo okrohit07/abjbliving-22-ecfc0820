@@ -4,10 +4,7 @@ const CommunitySection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-serif mb-6 text-4xl">COMUNIDAD EXCLUSIVA</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto font-normal text-sm">En ABJB formarás parte de una comunidad exclusiva compuesta por jóvenes profesionales, emprendedores y perfiles creativos que comparten una misma visión de vida. Más que un lugar para vivir, es un espacio para conectar, crecer y compartir experiencias con personas afines, en un entorno diseñado para inspirar relaciones auténticas y estilo de vida premium. 
-
-
-¿Lo mejor? Tú eliges cuánto te implicas. Siempre tendrás tu espacio, pero también la oportunidad de conectar cuando quieras.</p>
+          <p className="text-gray-600 max-w-2xl mx-auto font-normal text-sm">En ABJB formarás parte de una comunidad exclusiva compuesta por jóvenes profesionales, emprendedores y perfiles creativos que comparten una misma visión de vida. Más que un lugar para vivir, es un espacio para conectar, crecer y compartir experiencias con personas afines, en un entorno diseñado para inspirar relaciones auténticas y estilo de vida premium.                                                                                                                                                                                                             ¿Lo mejor? Tú eliges cuánto te implicas. Siempre tendrás tu espacio, pero también la oportunidad de conectar cuando quieras.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">

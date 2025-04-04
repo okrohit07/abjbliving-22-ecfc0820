@@ -16,7 +16,7 @@ const TechnologySection = () => {
             </div>
             <div>
               <h3 className="text-xl font-serif mb-3">Hogar Inteligente</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm">
                 Controla todos los aspectos de tu residencia desde la iluminación hasta la temperatura y la seguridad mediante nuestra aplicación exclusiva. Personaliza tu espacio según tus preferencias en cualquier momento y desde cualquier lugar.
               </p>
             </div>
@@ -28,7 +28,7 @@ const TechnologySection = () => {
             </div>
             <div>
               <h3 className="text-xl font-serif mb-3">Conectividad Premium</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm">
                 Disfruta de internet de alta velocidad mediante fibra óptica en toda la propiedad. Nuestros espacios de trabajo compartidos están equipados con la tecnología más avanzada para satisfacer tus necesidades profesionales.
               </p>
             </div>
@@ -40,7 +40,7 @@ const TechnologySection = () => {
             </div>
             <div>
               <h3 className="text-xl font-serif mb-3">Seguridad Avanzada</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm">
                 Sistemas de seguridad biométricos, acceso sin llave mediante reconocimiento facial y monitoreo de última generación. Tu seguridad y privacidad son nuestra prioridad absoluta.
               </p>
             </div>
@@ -52,7 +52,7 @@ const TechnologySection = () => {
             </div>
             <div>
               <h3 className="text-xl font-serif mb-3">Eficiencia Energética</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm">
                 Sistemas inteligentes que optimizan el consumo energético de tu residencia, reduciendo costos y minimizando el impacto ambiental sin comprometer tu confort.
               </p>
             </div>

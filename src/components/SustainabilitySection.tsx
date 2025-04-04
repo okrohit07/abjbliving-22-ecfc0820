@@ -7,7 +7,7 @@ const SustainabilitySection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-serif mb-6 text-4xl">COMPROMISO CON LA SOSTENIBILIDAD</h2>
-          <p className="text-gray-300 max-w-2xl mx-auto font-light text-sm text-justify">En ABJB, creemos que el lujo y la sostenibilidad pueden coexistir sin renuncias. Por eso, cada residencia ha sido concebida con criterios de eficiencia energética, materiales responsables y un enfoque consciente hacia el entorno. Vivir en ABJB es disfrutar de un estilo de vida sofisticado, alineado con los valores de un futuro más sostenible.</p>
+          <p className="text-gray-300 max-w-2xl mx-auto text-sm text-center font-normal">En ABJB, creemos que el lujo y la sostenibilidad pueden coexistir sin renuncias. Por eso, cada apartamento ha sido concebido con criterios de eficiencia energética, materiales responsables y un enfoque consciente hacia el entorno. Vivir en ABJB es disfrutar de un estilo de vida sofisticado, alineado con los valores de un futuro más sostenible.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">

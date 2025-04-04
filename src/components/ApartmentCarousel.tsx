@@ -182,7 +182,6 @@ const ApartmentCard = ({
           <span className="text-xl font-semibold">{apartment.price.amount}€</span>
           <span className="text-xs ml-1">{apartment.price.period}</span>
         </div>
-        {apartment.price.condition && <div className="text-xs text-gray-500">{apartment.price.condition}</div>}
         
         <button className="w-full bg-black text-white px-3 py-1.5 mt-2 font-medium hover:bg-black/80 transition text-xs">
           VER DETALLES

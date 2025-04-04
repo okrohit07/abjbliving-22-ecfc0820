@@ -1,4 +1,5 @@
-import { Users, Coffee, Dumbbell, Wifi } from 'lucide-react';
+
+import { Users, Coffee, Dumbbell, Wifi, Shield } from 'lucide-react';
 const CommunitySection = () => {
   return <div className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
@@ -9,7 +10,7 @@ const CommunitySection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="bg-background p-8 text-center shadow-md">
             <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
               <Users className="h-8 w-8 text-white" />
@@ -45,6 +46,16 @@ const CommunitySection = () => {
             <h3 className="text-xl font-serif mb-4">Conectividad Avanzada</h3>
             <p className="text-gray-600">
               Internet de alta velocidad en toda la propiedad y funciones inteligentes para una experiencia de vida perfectamente conectada.
+            </p>
+          </div>
+          
+          <div className="bg-background p-8 text-center shadow-md">
+            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
+              <Shield className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-xl font-serif mb-4">Bravo Society</h3>
+            <p className="text-gray-600">
+              Comunidad exclusiva solo para residentes donde podrás reservar espacios, participar en eventos exclusivos y controlar tu vivienda desde nuestra app.
             </p>
           </div>
         </div>

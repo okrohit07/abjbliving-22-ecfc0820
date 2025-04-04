@@ -38,7 +38,7 @@ const Communities = () => {
               </ul>
             </div>
             <div>
-              <h2 className="text-4xl font-serif mb-6">Community Values</h2>
+              <h2 className="text-4xl font-serif mb-6">Valores de nuestra comunidad</h2>
               <p className="text-lg text-gray-600 mb-6">
                 At Nera Living, we're built around core values that promote a positive, inclusive, and supportive environment for all residents.
               </p>

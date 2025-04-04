@@ -16,7 +16,7 @@ const SustainabilitySection = () => {
               <Leaf className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-serif mb-4">Materiales Sostenibles</h3>
-            <p className="text-gray-300">
+            <p className="text-gray-300 text-sm">
               Utilizamos materiales ecoamigables y de origen responsable en la construcción y decoración de nuestros espacios.
             </p>
           </div>
@@ -26,7 +26,7 @@ const SustainabilitySection = () => {
               <Recycle className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-serif mb-4">Cero Desperdicio</h3>
-            <p className="text-gray-300">
+            <p className="text-gray-300 text-sm">
               Programas de reciclaje y compostaje para reducir nuestro impacto ambiental y fomentar prácticas responsables en nuestra comunidad.
             </p>
           </div>
@@ -36,7 +36,7 @@ const SustainabilitySection = () => {
               <Wind className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-serif mb-4">Energía Renovable</h3>
-            <p className="text-gray-300">
+            <p className="text-gray-300 text-sm">
               Nuestras propiedades utilizan energía solar y otras fuentes renovables para reducir nuestra huella de carbono.
             </p>
           </div>
@@ -45,10 +45,8 @@ const SustainabilitySection = () => {
             <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6 border border-white/20">
               <Droplet className="h-8 w-8 text-white" />
             </div>
-            <h3 className="text-xl font-serif mb-4">Gestión del Agua</h3>
-            <p className="text-gray-300">
-              Sistemas inteligentes de ahorro de agua y reutilización para un consumo responsable y eficiente.
-            </p>
+            <h3 className="text-xl font-serif mb-4">Domótica avanzada</h3>
+            <p className="text-gray-300 text-sm">Sistema de domótica avanzada que optimiza el consumo energético, regulando iluminación, climatización y electrodomésticos de forma eficiente y personalizada.</p>
           </div>
         </div>
         

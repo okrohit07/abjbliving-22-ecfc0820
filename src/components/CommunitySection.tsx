@@ -13,7 +13,7 @@ const CommunitySection = () => {
               <Users className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-serif mb-4">Eventos Exclusivos</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-sm">
               Reuniones sociales y eventos exclusivos para conectar con los miembros de nuestra comunidad y crear relaciones significativas.
             </p>
           </div>
@@ -23,7 +23,7 @@ const CommunitySection = () => {
               <Coffee className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-serif mb-4">Espacios Compartidos</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-sm">
               Áreas comunes diseñadas con elegancia donde puedes trabajar, socializar o simplemente relajarte fuera de tu apartamento privado.
             </p>
           </div>
@@ -33,7 +33,7 @@ const CommunitySection = () => {
               <Dumbbell className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-serif mb-4">Bienestar Premium</h3>
-            <p className="text-gray-600">Acceso a gimnasios de alta gama, spa y programas de bienestar para mantener un estilo de vida saludable y equilibrado.</p>
+            <p className="text-gray-600 text-sm">Acceso a gimnasios de alta gama, spa y programas de bienestar para mantener un estilo de vida saludable y equilibrado.</p>
           </div>
           
           <div className="bg-background p-8 text-center shadow-md">
@@ -41,7 +41,7 @@ const CommunitySection = () => {
               <Wifi className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-serif mb-4">Conectividad Avanzada</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-sm">
               Internet de alta velocidad en toda la propiedad y funciones inteligentes para una experiencia de vida perfectamente conectada.
             </p>
           </div>
@@ -51,7 +51,7 @@ const CommunitySection = () => {
               <Heart className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-xl font-serif mb-4">Bravo Society</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-sm">
               Comunidad exclusiva solo para residentes donde podrás reservar espacios, participar en eventos exclusivos y controlar tu vivienda desde nuestra app.
             </p>
           </div>

@@ -56,32 +56,22 @@ const Footer = () => {
             </div>
             
             <div>
-              <h3 className="text-lg font-medium mb-4">Residencias</h3>
+              <h3 className="text-lg font-medium mb-4">Nuestros apartamentos</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/apartments/studio" className="text-gray-300 hover:text-white transition">
-                    Estudio
-                  </Link>
+                  <Link to="/apartments/studio" className="text-gray-300 hover:text-white transition">Street view apartment</Link>
                 </li>
                 <li>
-                  <Link to="/apartments/1-bedroom" className="text-gray-300 hover:text-white transition">
-                    1-Recámara
-                  </Link>
+                  <Link to="/apartments/1-bedroom" className="text-gray-300 hover:text-white transition">Street view studio</Link>
                 </li>
                 <li>
-                  <Link to="/apartments/2-bedroom" className="text-gray-300 hover:text-white transition">
-                    2-Recámaras
-                  </Link>
+                  <Link to="/apartments/2-bedroom" className="text-gray-300 hover:text-white transition">Standard twin studio</Link>
                 </li>
                 <li>
-                  <Link to="/apartments/pricing" className="text-gray-300 hover:text-white transition">
-                    Precios
-                  </Link>
+                  <Link to="/apartments/pricing" className="text-gray-300 hover:text-white transition">Deluxe apartment</Link>
                 </li>
                 <li>
-                  <Link to="/apartments/availability" className="text-gray-300 hover:text-white transition">
-                    Disponibilidad
-                  </Link>
+                  <Link to="/apartments/availability" className="text-gray-300 hover:text-white transition"></Link>
                 </li>
               </ul>
             </div>

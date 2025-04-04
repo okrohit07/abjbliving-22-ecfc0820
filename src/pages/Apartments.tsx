@@ -8,9 +8,7 @@ const Apartments = () => {
       <div className="pt-24 pb-8 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <h1 className="text-5xl md:text-6xl font-serif mb-6">Nuestros apartamentos</h1>
-          <p className="text-xl text-gray-600 max-w-3xl">
-            Discover our selection of beautifully designed living spaces that combine comfort, functionality, and style. Each apartment is thoughtfully crafted to meet your modern lifestyle needs.
-          </p>
+          <p className="text-gray-600 max-w-3xl text-sm">En ABJB, nuestros apartamentos están diseñados para ofrecer una experiencia de vida única, combinando lujo, confort y tecnología avanzada. Cada espacio está cuidadosamente planificado para maximizar el bienestar de nuestros residentes, con acabados de alta gama y soluciones sostenibles que promueven un estilo de vida moderno y eficiente. Perfectos para aquellos que buscan un hogar exclusivo y funcional en el corazón de la ciudad.</p>
         </div>
       </div>
       <ApartmentCarousel />

@@ -8,7 +8,7 @@ const Footer = () => {
             <Link to="/" className="text-3xl font-serif font-bold tracking-tight block mb-6">
               ABJB <span className="font-light">LIVING</span>
             </Link>
-            <p className="max-w-xs text-gray-300 mb-6 text-sm">
+            <p className="max-w-xs text-gray-300 mb-6 text-xs">
               Elevando tu estilo de vida con nuestros espacios de coliving premium diseñados para una vida moderna, conectada y sostenible.
             </p>
             <div className="flex space-x-4">
@@ -37,9 +37,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/apartments" className="text-gray-300 hover:text-white transition">
-                    Residencias
-                  </Link>
+                  <Link to="/apartments" className="text-gray-300 hover:text-white transition">Nuestros apartamentos</Link>
                 </li>
                 <li>
                   <Link to="/communities" className="text-gray-300 hover:text-white transition">
@@ -47,9 +45,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/amenities" className="text-gray-300 hover:text-white transition">
-                    Amenidades
-                  </Link>
+                  <Link to="/amenities" className="text-gray-300 hover:text-white transition">Serivicios</Link>
                 </li>
                 <li>
                   <Link to="/about" className="text-gray-300 hover:text-white transition">

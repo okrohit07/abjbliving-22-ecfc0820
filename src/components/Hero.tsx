@@ -13,7 +13,7 @@ const Hero = () => {
         <img 
           src="/lovable-uploads/3bd870a2-7898-4890-a275-cbee1dbc4c52.png" 
           alt="Intimate moment" 
-          className="w-auto h-auto max-w-full max-h-full object-contain px-4" 
+          className="w-full h-full object-cover" 
         />
       </div>
       

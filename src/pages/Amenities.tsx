@@ -187,9 +187,9 @@ const Amenities = () => {
       </div>
 
       {/* CTA Banner */}
-      <div className="bg-black text-white py-12">
+      <div className="text-white py-12 bg-stone-400">
         <div className="container mx-auto px-4 md:px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-serif mb-4">¿Listo para experimentar nuestras amenidades?</h2>
+          <h2 className="text-3xl md:text-4xl font-serif mb-4">¿Con ganas de más?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
             Programa una visita y descubre personalmente todo lo que ABJB tiene para ofrecer.
           </p>

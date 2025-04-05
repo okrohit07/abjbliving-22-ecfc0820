@@ -1,7 +1,10 @@
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ApartmentCarousel from "@/components/ApartmentCarousel";
 import CallToAction from "@/components/CallToAction";
+import { Wifi, Thermometer, AirVent, Tv, Utensils, Armchair, Towel, Bed, Gift, Wheelchair, Car } from "lucide-react";
+
 const Apartments = () => {
   return <div className="min-h-screen">
       <Navbar />
@@ -12,6 +15,100 @@ const Apartments = () => {
         </div>
       </div>
       <ApartmentCarousel />
+      
+      {/* New Amenities Section */}
+      <div className="py-16 bg-background">
+        <div className="container mx-auto px-4 md:px-6">
+          <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">Todo lo que incluye tu apartamento</h2>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
+                <Wifi className="w-6 h-6" />
+              </div>
+              <span className="text-sm font-medium">WiFi</span>
+            </div>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
+                <Thermometer className="w-6 h-6" />
+              </div>
+              <span className="text-sm font-medium">Calefacción / Refrigeración</span>
+            </div>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
+                <AirVent className="w-6 h-6" />
+              </div>
+              <span className="text-sm font-medium">Aire renovado</span>
+            </div>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
+                <Tv className="w-6 h-6" />
+              </div>
+              <span className="text-sm font-medium">Smart TV</span>
+            </div>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
+                <Utensils className="w-6 h-6" />
+              </div>
+              <span className="text-sm font-medium">Cocina completa</span>
+            </div>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
+                <Armchair className="w-6 h-6" />
+              </div>
+              <span className="text-sm font-medium">Armario</span>
+            </div>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
+                <Towel className="w-6 h-6" />
+              </div>
+              <span className="text-sm font-medium">Toallas y ropa de cama</span>
+            </div>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
+                <Gift className="w-6 h-6" />
+              </div>
+              <span className="text-sm font-medium">Amenities</span>
+            </div>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
+                <Bed className="w-6 h-6" />
+              </div>
+              <span className="text-sm font-medium">Materiales biosaludables</span>
+            </div>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
+                <Car className="w-6 h-6" />
+              </div>
+              <span className="text-sm font-medium">Parking</span>
+            </div>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
+                <Wheelchair className="w-6 h-6" />
+              </div>
+              <span className="text-sm font-medium">Accesibilidad universal</span>
+            </div>
+            
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
+                <Wifi className="w-6 h-6" />
+              </div>
+              <span className="text-sm font-medium">Domótica inteligente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

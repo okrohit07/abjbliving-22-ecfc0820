@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ApartmentCarousel from "@/components/ApartmentCarousel";
 import CallToAction from "@/components/CallToAction";
-import { Wifi, Thermometer, AirVent, Tv, Utensils, Armchair, Towel, Bed, Gift, Wheelchair, Car } from "lucide-react";
+import { Wifi, Thermometer, AirVent, Tv, Utensils, Armchair, ShowerHead, Bed, Gift, Accessibility, Car } from "lucide-react";
 
 const Apartments = () => {
   return <div className="min-h-screen">
@@ -66,7 +66,7 @@ const Apartments = () => {
             
             <div className="flex flex-col items-center text-center">
               <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
-                <Towel className="w-6 h-6" />
+                <ShowerHead className="w-6 h-6" />
               </div>
               <span className="text-sm font-medium">Toallas y ropa de cama</span>
             </div>
@@ -94,7 +94,7 @@ const Apartments = () => {
             
             <div className="flex flex-col items-center text-center">
               <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center mb-3">
-                <Wheelchair className="w-6 h-6" />
+                <Accessibility className="w-6 h-6" />
               </div>
               <span className="text-sm font-medium">Accesibilidad universal</span>
             </div>

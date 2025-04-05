@@ -1,65 +1,56 @@
-import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+import { Button } from './ui/button';
+import { useMobile } from '@/hooks/use-mobile';
+
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background shadow-md py-2' : 'bg-transparent py-4'}`}>
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <Link to="/" className="text-2xl font-serif font-bold tracking-tight">
-          ABJB <span className="font-light"></span>
+  const [isOpen, setIsOpen] = useState(false);
+  const isMobile = useMobile();
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <Link to="/" className="flex items-center">
+          <span className="font-playfair text-2xl font-bold text-gray-800">ABJB Living</span>
         </Link>
-        
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/apartments" className="text-sm font-medium hover:text-black/70 transition">NUESTROS APARTAMENTOS</Link>
-          <Link to="/communities" className="text-sm font-medium hover:text-black/70 transition">
-            COMUNIDAD
-          </Link>
-          <Link to="/amenities" className="text-sm font-medium hover:text-black/70 transition">SERVICIOS</Link>
-          <Link to="/about" className="text-sm font-medium hover:text-black/70 transition">
-            NOSOTROS
-          </Link>
-          <Link to="/find-room" className="bg-black text-white px-4 py-2 text-sm font-medium hover:bg-black/80 transition">DESCUBRE TU ESPACIO</Link>
-        </nav>
 
-        {/* Mobile menu button */}
-        <button className="md:hidden text-foreground" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
-
-      {/* Mobile Navigation */}
-      {isMobileMenuOpen && <div className="md:hidden bg-background absolute top-full left-0 right-0 border-t border-gray-200 shadow-md">
-          <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <Link to="/apartments" className="text-sm font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
-              RESIDENCIAS
-            </Link>
-            <Link to="/communities" className="text-sm font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
-              COMUNIDAD
-            </Link>
-            <Link to="/amenities" className="text-sm font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
-              AMENIDADES
-            </Link>
-            <Link to="/about" className="text-sm font-medium py-2" onClick={() => setIsMobileMenuOpen(false)}>
-              NOSOTROS
-            </Link>
-            <Link to="/find-room" className="bg-black text-white px-4 py-2 text-sm font-medium text-center" onClick={() => setIsMobileMenuOpen(false)}>
-              ENCUENTRA TU ESPACIO
+        {isMobile ? (
+          <>
+            <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label="Menu">
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
+            {isOpen && (
+              <div className="absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-4 flex flex-col gap-4 animate-fade-in">
+                <Link to="/apartments" className="py-2 text-gray-800 hover:text-primary transition-colors" onClick={toggleMenu}>Apartments</Link>
+                <Link to="/amenities" className="py-2 text-gray-800 hover:text-primary transition-colors" onClick={toggleMenu}>Amenities</Link>
+                <Link to="/communities" className="py-2 text-gray-800 hover:text-primary transition-colors" onClick={toggleMenu}>Communities</Link>
+                <Link to="/about" className="py-2 text-gray-800 hover:text-primary transition-colors" onClick={toggleMenu}>About Us</Link>
+                <Link to="/find-room">
+                  <Button className="w-full bg-primary hover:bg-primary/90">Find Your Room</Button>
+                </Link>
+              </div>
+            )}
+          </>
+        ) : (
+          <div className="flex items-center gap-8">
+            <Link to="/apartments" className="text-gray-800 hover:text-primary transition-colors">Apartments</Link>
+            <Link to="/amenities" className="text-gray-800 hover:text-primary transition-colors">Amenities</Link>
+            <Link to="/communities" className="text-gray-800 hover:text-primary transition-colors">Communities</Link>
+            <Link to="/about" className="text-gray-800 hover:text-primary transition-colors">About Us</Link>
+            <Link to="/find-room">
+              <Button>Find Your Room</Button>
             </Link>
           </div>
-        </div>}
-    </header>;
+        )}
+      </div>
+    </nav>
+  );
 };
+
 export default Navbar;

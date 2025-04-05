@@ -1,61 +1,66 @@
-import { Leaf, Recycle, Wind, Droplet } from 'lucide-react';
-import { Link } from 'react-router-dom';
+
+import React from 'react';
+
 const SustainabilitySection = () => {
-  return <div className="relative py-16 md:py-24 bg-cover bg-center text-white" style={{
-    backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/lovable-uploads/438883b0-ffdc-4170-80dd-fe2e1e51b951.png)'
-  }}>
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-12">
-          <h2 className="font-serif mb-6 text-4xl">COMPROMISO CON LA SOSTENIBILIDAD</h2>
-          <p className="text-gray-300 max-w-2xl mx-auto text-sm text-center font-normal">En ABJB, creemos que el lujo y la sostenibilidad pueden coexistir sin renuncias. Por eso, cada apartamento ha sido concebido con criterios de eficiencia energética, materiales responsables y un                                                         enfoque consciente hacia el entorno.                                                                                                                                                                                                                                  Vivir en ABJB es disfrutar de un estilo de vida sofisticado, alineado con los valores de un futuro más sostenible.</p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          <div className="backdrop-blur-sm bg-black/30 p-8 text-center rounded-lg border border-white/10">
-            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6 border border-white/20">
-              <Leaf className="h-8 w-8 text-white" />
+  return (
+    <section className="py-16 md:py-24 bg-green-50">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="order-2 lg:order-1">
+            <div className="max-w-xl">
+              <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-6">Committed to Sustainability</h2>
+              <p className="text-lg text-gray-700 mb-6">
+                At ABJB Living, we believe sustainable living should be accessible without compromising on luxury or comfort.
+                Our spaces are designed with eco-friendly practices from conception to daily operations.
+              </p>
+              
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                    <span className="text-green-600 text-xl font-semibold">01</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">Renewable Energy</h3>
+                    <p className="text-gray-600">All our buildings are powered by renewable energy sources and equipped with energy-efficient systems.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                    <span className="text-green-600 text-xl font-semibold">02</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">Water Conservation</h3>
+                    <p className="text-gray-600">Smart water systems that reduce waste while maintaining excellent water quality and pressure.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                    <span className="text-green-600 text-xl font-semibold">03</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">Eco-friendly Materials</h3>
+                    <p className="text-gray-600">Our interiors feature sustainable materials and non-toxic finishes for a healthier living environment.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3 className="text-xl font-serif mb-4">Materiales Sostenibles</h3>
-            <p className="text-gray-300 text-sm">
-              Utilizamos materiales ecoamigables y de origen responsable en la construcción y decoración de nuestros espacios.
-            </p>
           </div>
           
-          <div className="backdrop-blur-sm bg-black/30 p-8 text-center rounded-lg border border-white/10">
-            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6 border border-white/20">
-              <Recycle className="h-8 w-8 text-white" />
+          <div className="order-1 lg:order-2">
+            <div className="rounded-2xl overflow-hidden">
+              <img 
+                src="/lovable-uploads/f55620b5-ae48-47a7-be46-aede9cdf47cd.png" 
+                alt="Sustainable living environment with plants and natural light" 
+                className="w-full h-auto"
+              />
             </div>
-            <h3 className="text-xl font-serif mb-4">Cero Desperdicio</h3>
-            <p className="text-gray-300 text-sm">
-              Programas de reciclaje y compostaje para reducir nuestro impacto ambiental y fomentar prácticas responsables en nuestra comunidad.
-            </p>
           </div>
-          
-          <div className="backdrop-blur-sm bg-black/30 p-8 text-center rounded-lg border border-white/10">
-            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6 border border-white/20">
-              <Wind className="h-8 w-8 text-white" />
-            </div>
-            <h3 className="text-xl font-serif mb-4">Energía Renovable</h3>
-            <p className="text-gray-300 text-sm">
-              Nuestras propiedades utilizan energía solar y otras fuentes renovables para reducir nuestra huella de carbono.
-            </p>
-          </div>
-          
-          <div className="backdrop-blur-sm bg-black/30 p-8 text-center rounded-lg border border-white/10">
-            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6 border border-white/20">
-              <Droplet className="h-8 w-8 text-white" />
-            </div>
-            <h3 className="text-xl font-serif mb-4">Domótica avanzada</h3>
-            <p className="text-gray-300 text-sm">Sistema de domótica avanzada que optimiza el consumo energético, regulando iluminación, climatización y electrodomésticos de forma eficiente y personalizada.</p>
-          </div>
-        </div>
-        
-        <div className="text-center">
-          <Link to="/about" className="inline-flex items-center px-6 py-3 border border-white hover:bg-white hover:text-black transition-colors">
-            CONOCE MÁS SOBRE NUESTRAS INICIATIVAS
-          </Link>
         </div>
       </div>
-    </div>;
+    </section>
+  );
 };
+
 export default SustainabilitySection;

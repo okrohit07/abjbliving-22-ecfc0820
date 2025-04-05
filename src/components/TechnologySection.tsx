@@ -1,64 +1,54 @@
-import { Smartphone, Cpu, Shield, Lightbulb } from 'lucide-react';
+
+import React from 'react';
+import { Laptop, Wifi, Lock, Shield } from 'lucide-react';
+
+const featureItems = [
+  {
+    icon: <Wifi className="w-10 h-10 text-primary" />,
+    title: 'High-Speed Internet',
+    description: 'Fiber optic connections throughout all our spaces ensuring seamless work and entertainment experiences.'
+  },
+  {
+    icon: <Lock className="w-10 h-10 text-primary" />,
+    title: 'Smart Access',
+    description: 'Keyless entry systems and smartphone-controlled access to all building amenities.'
+  },
+  {
+    icon: <Laptop className="w-10 h-10 text-primary" />,
+    title: 'Home Automation',
+    description: 'Voice-controlled lighting, climate, and entertainment systems in all our living spaces.'
+  },
+  {
+    icon: <Shield className="w-10 h-10 text-primary" />,
+    title: 'Advanced Security',
+    description: 'Round-the-clock monitoring and AI-powered security systems for your peace of mind.'
+  }
+];
+
 const TechnologySection = () => {
-  return <div className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-12">
-          <h2 className="font-serif mb-6 text-4xl">TECNOLOGÍA AVANZADA</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-sm text-center">
-            En ABJB, la tecnología no es solo una comodidad, es parte integral de nuestra filosofía para ofrecerte la experiencia de vida más innovadora y conectada.
+  return (
+    <section className="py-16 md:py-24 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-6">Smart Living Technology</h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Our spaces are equipped with cutting-edge technology to enhance your living experience 
+            and provide ultimate convenience.
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="flex flex-col md:flex-row items-start gap-6">
-            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center flex-shrink-0">
-              <Smartphone className="h-8 w-8 text-white" />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {featureItems.map((item, index) => (
+            <div key={index} className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="mb-5">{item.icon}</div>
+              <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+              <p className="text-gray-600">{item.description}</p>
             </div>
-            <div>
-              <h3 className="text-xl font-serif mb-3">Hogar Inteligente</h3>
-              <p className="text-gray-600 text-sm">
-                Controla todos los aspectos de tu residencia desde la iluminación hasta la temperatura y la seguridad mediante nuestra aplicación exclusiva. Personaliza tu espacio según tus preferencias en cualquier momento y desde cualquier lugar.
-              </p>
-            </div>
-          </div>
-          
-          <div className="flex flex-col md:flex-row items-start gap-6">
-            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center flex-shrink-0">
-              <Cpu className="h-8 w-8 text-white" />
-            </div>
-            <div>
-              <h3 className="text-xl font-serif mb-3">Conectividad Premium</h3>
-              <p className="text-gray-600 text-sm">
-                Disfruta de internet de alta velocidad mediante fibra óptica en toda la propiedad. Nuestros espacios de trabajo compartidos están equipados con la tecnología más avanzada para satisfacer tus necesidades profesionales.
-              </p>
-            </div>
-          </div>
-          
-          <div className="flex flex-col md:flex-row items-start gap-6">
-            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center flex-shrink-0">
-              <Shield className="h-8 w-8 text-white" />
-            </div>
-            <div>
-              <h3 className="text-xl font-serif mb-3">Seguridad Avanzada</h3>
-              <p className="text-gray-600 text-sm">
-                Sistemas de seguridad biométricos, acceso sin llave mediante reconocimiento facial y monitoreo de última generación. Tu seguridad y privacidad son nuestra prioridad absoluta.
-              </p>
-            </div>
-          </div>
-          
-          <div className="flex flex-col md:flex-row items-start gap-6">
-            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center flex-shrink-0">
-              <Lightbulb className="h-8 w-8 text-white" />
-            </div>
-            <div>
-              <h3 className="text-xl font-serif mb-3">Eficiencia Energética</h3>
-              <p className="text-gray-600 text-sm">
-                Sistemas inteligentes que optimizan el consumo energético de tu residencia, reduciendo costos y minimizando el impacto ambiental sin comprometer tu confort.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-    </div>;
+    </section>
+  );
 };
+
 export default TechnologySection;

@@ -1,62 +1,42 @@
-import { Users, Coffee, Dumbbell, Wifi, Heart } from 'lucide-react';
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from './ui/button';
+
 const CommunitySection = () => {
-  return <div className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-12">
-          <h2 className="font-serif mb-6 text-4xl">COMUNIDAD EXCLUSIVA</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto font-normal text-sm text-center">En ABJB formarás parte de una comunidad exclusiva compuesta por personas que comparten una misma visión de vida. Más que un lugar para vivir, es un espacio para conectar, crecer y compartir experiencias con personas afines, en un entorno diseñado para inspirar relaciones auténticas y                                                                        un estilo de vida premium.                                                                                                                                                                                                                                      ¿Lo mejor? Tú eliges cuánto te implicas. Siempre tendrás tu espacio, pero también la oportunidad de conectar cuando quieras.</p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-          <div className="bg-background p-8 text-center shadow-md">
-            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
-              <Users className="h-8 w-8 text-white" />
-            </div>
-            <h3 className="text-xl font-serif mb-4">Eventos Exclusivos</h3>
-            <p className="text-gray-600 text-sm">
-              Reuniones sociales y eventos exclusivos para conectar con los miembros de nuestra comunidad y crear relaciones significativas.
-            </p>
+  return (
+    <section className="py-16 md:py-24">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="md:w-1/2 overflow-hidden rounded-2xl">
+            <img 
+              src="/lovable-uploads/8733dfb8-abd8-48c1-a120-3bfa7952a9d0.png" 
+              alt="Community gathering in a modern coliving space" 
+              className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+            />
           </div>
           
-          <div className="bg-background p-8 text-center shadow-md">
-            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
-              <Coffee className="h-8 w-8 text-white" />
-            </div>
-            <h3 className="text-xl font-serif mb-4">Espacios Compartidos</h3>
-            <p className="text-gray-600 text-sm">
-              Áreas comunes diseñadas con elegancia donde puedes trabajar, socializar o simplemente relajarte fuera de tu apartamento privado.
+          <div className="md:w-1/2">
+            <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-6">Join a Community of Like-minded Professionals</h2>
+            <p className="text-lg text-gray-600 mb-6">
+              Our coliving spaces are designed to foster meaningful connections while respecting your privacy.
+              From networking events to wellness activities, we create opportunities to build a community
+              that enhances both your personal and professional life.
             </p>
-          </div>
-          
-          <div className="bg-background p-8 text-center shadow-md">
-            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
-              <Dumbbell className="h-8 w-8 text-white" />
-            </div>
-            <h3 className="text-xl font-serif mb-4">Bienestar Premium</h3>
-            <p className="text-gray-600 text-sm">Acceso a gimnasios de alta gama, spa y programas de bienestar para mantener un estilo de vida saludable y equilibrado.</p>
-          </div>
-          
-          <div className="bg-background p-8 text-center shadow-md">
-            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
-              <Wifi className="h-8 w-8 text-white" />
-            </div>
-            <h3 className="text-xl font-serif mb-4">Conectividad Avanzada</h3>
-            <p className="text-gray-600 text-sm">
-              Internet de alta velocidad en toda la propiedad y funciones inteligentes para una experiencia de vida perfectamente conectada.
+            <p className="text-lg text-gray-600 mb-8">
+              Experience the perfect balance between social interaction and personal space
+              in our thoughtfully designed environments.
             </p>
-          </div>
-          
-          <div className="bg-background p-8 text-center shadow-md">
-            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
-              <Heart className="h-8 w-8 text-white" />
-            </div>
-            <h3 className="text-xl font-serif mb-4">Bravo Society</h3>
-            <p className="text-gray-600 text-sm">
-              Comunidad exclusiva solo para residentes donde podrás reservar espacios, participar en eventos exclusivos y controlar tu vivienda desde nuestra app.
-            </p>
+            <Link to="/communities">
+              <Button size="lg" className="rounded-full">
+                Explore Our Communities
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
-    </div>;
+    </section>
+  );
 };
+
 export default CommunitySection;

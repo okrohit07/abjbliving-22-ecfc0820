@@ -1,118 +1,77 @@
-import { Facebook, Instagram, Twitter, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone } from 'lucide-react';
+
 const Footer = () => {
-  return <footer className="bg-black text-white">
-      <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
-        <div className="flex flex-col md:flex-row justify-between mb-12 md:mb-16">
-          <div className="mb-8 md:mb-0">
-            <Link to="/" className="text-3xl font-serif font-bold tracking-tight block mb-6">
-              ABJB <span className="font-light"></span>
-            </Link>
-            <p className="max-w-xs text-gray-300 mb-6 text-xs px-0 mx-0 my-[20px]">Elevando tu estilo de vida con nuestros espacios de coliving premium diseñados para una vida moderna, conectada y sostenible.</p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-gray-400 transition">
+  return (
+    <footer className="bg-gray-900 text-gray-300">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <h3 className="font-playfair text-2xl font-bold text-white mb-6">ABJB Living</h3>
+            <p className="mb-4">
+              Modern coliving spaces that blend luxury, technology, and sustainability for today's urban professionals.
+            </p>
+            <div className="flex space-x-4 mt-6">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-white hover:text-gray-400 transition">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-white hover:text-gray-400 transition">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-white hover:text-gray-400 transition">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-            <div className="px-[40px]">
-              <h3 className="text-lg font-medium mb-4">Navegación</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link to="/" className="text-gray-300 hover:text-white transition">
-                    Inicio
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/apartments" className="text-gray-300 hover:text-white transition">Nuestros apartamentos</Link>
-                </li>
-                <li>
-                  <Link to="/communities" className="text-gray-300 hover:text-white transition">
-                    Comunidad
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/amenities" className="text-gray-300 hover:text-white transition">Servicios</Link>
-                </li>
-                <li>
-                  <Link to="/about" className="text-gray-300 hover:text-white transition">
-                    Nosotros
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-medium mb-4">Nuestros apartamentos</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link to="/apartments/studio" className="text-gray-300 hover:text-white transition">Street view apartment</Link>
-                </li>
-                <li>
-                  <Link to="/apartments/1-bedroom" className="text-gray-300 hover:text-white transition">Street view studio</Link>
-                </li>
-                <li>
-                  <Link to="/apartments/2-bedroom" className="text-gray-300 hover:text-white transition">Standard twin studio</Link>
-                </li>
-                <li>
-                  <Link to="/apartments/pricing" className="text-gray-300 hover:text-white transition">Deluxe apartment</Link>
-                </li>
-                <li>
-                  <Link to="/apartments/availability" className="text-gray-300 hover:text-white transition"></Link>
-                </li>
-              </ul>
-            </div>
-            
-            <div className="col-span-2 md:col-span-1">
-              <h3 className="text-lg font-medium mb-4">Contáctanos</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <MapPin size={20} className="mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-gray-300">Calle de Juan Bravo 58, Madrid, 28006</span>
-                </li>
-                <li className="flex items-center">
-                  <Phone size={20} className="mr-2 flex-shrink-0" />
-                  <a href="tel:+5215512345678" className="text-gray-300 hover:text-white transition">+34 914 029 800</a>
-                </li>
-                <li className="flex items-center">
-                  <Mail size={20} className="mr-2 flex-shrink-0" />
-                  <a href="mailto:info@abjb.com" className="text-gray-300 hover:text-white transition">
-                    info@abjb.com
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-6">Explore</h3>
+            <ul className="space-y-3">
+              <li><Link to="/apartments" className="hover:text-white transition-colors">Apartments</Link></li>
+              <li><Link to="/amenities" className="hover:text-white transition-colors">Amenities</Link></li>
+              <li><Link to="/communities" className="hover:text-white transition-colors">Communities</Link></li>
+              <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/find-room" className="hover:text-white transition-colors">Find Your Room</Link></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-6">Locations</h3>
+            <ul className="space-y-3">
+              <li>New York, NY</li>
+              <li>San Francisco, CA</li>
+              <li>Boston, MA</li>
+              <li>Austin, TX</li>
+              <li>Miami, FL</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-6">Contact</h3>
+            <ul className="space-y-3">
+              <li className="flex items-center gap-2">
+                <Mail size={18} />
+                <a href="mailto:info@abjbliving.com" className="hover:text-white transition-colors">info@abjbliving.com</a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone size={18} />
+                <a href="tel:+1234567890" className="hover:text-white transition-colors">+1 (234) 567-890</a>
+              </li>
+            </ul>
           </div>
         </div>
         
-        <div className="pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} ABJB Living. Todos los derechos reservados.
-          </p>
-          <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition">
-              Política de Privacidad
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition">
-              Términos de Servicio
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition">
-              Política de Cookies
-            </a>
-          </div>
+        <div className="border-t border-gray-800 mt-12 pt-6 text-center">
+          <p>&copy; {new Date().getFullYear()} ABJB Living. All rights reserved.</p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
